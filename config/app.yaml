@@ -1,0 +1,20 @@
+# 环境 dev,test,prod
+env: prod
+
+# 扫描的文件夹
+scan_dir: "/tmp"
+
+# 文件扫描位置记录
+position_file: "/etc/sqltrace_position.ini"
+
+# 每个sql指纹explain执行的间隔 秒
+explain_interval: 120
+
+# 数据库地址
+database:
+  default:
+    driver: mysql
+    dsn:
+  tidb_01:
+    driver: tidb
+    dsn:
